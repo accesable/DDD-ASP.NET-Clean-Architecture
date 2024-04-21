@@ -23,12 +23,12 @@ public class JwtTokenGenerator : IJwtTokenGenerator
                 Encoding.UTF8.GetBytes(_jwtSettings.Secret)
             ),SecurityAlgorithms.HmacSha256
         );
-        var claims = new []
+        var claims = new List<Claim>
         {
-            new Claim(JwtRegisteredClaimNames.Sub,userId.ToString()),
+            new Claim(JwtRegisteredClaimNames.Sub, userId.ToString()),
             new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-            new Claim(JwtRegisteredClaimNames.GivenName,firstName),
-            new Claim(JwtRegisteredClaimNames.FamilyName,lastName),
+            new Claim(JwtRegisteredClaimNames.GivenName, firstName),
+            new Claim(JwtRegisteredClaimNames.FamilyName, lastName),
         };
 
         var securityToken = new JwtSecurityToken(

@@ -1,9 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>01f298a3-638d-4322-a33b-771f9977963e</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\BuberDinner.Contracts\BuberDinner.Contracts.csproj" />

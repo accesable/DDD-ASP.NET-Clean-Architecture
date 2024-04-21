@@ -10,7 +10,7 @@ public class AuthenticationService : IAuthenticationService
     {
         _jwtTokenGenerator = jwtTokenGenerator;
     }
-
+    // Overried Method
     public AuthenticationResult Register(string firstName, string lastName, string email, string password)
     {
         // TODO : Check if user exists
@@ -28,7 +28,7 @@ public class AuthenticationService : IAuthenticationService
             token
         );
     }
-
+    // Overried Method
     public AuthenticationResult Login(string email, string password)
     {
         return new AuthenticationResult(
