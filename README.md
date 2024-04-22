@@ -191,6 +191,8 @@ dotnet user-secrets set --project .\BuberDinner.Api\ "JwtSettings:Secret" "tran-
 dotnet user-secrets list --project .\BuberDinner.Api\
 ```
 
+## Repository Pattern
+> "Repositories are **classes** or **component** that encapsulate the logic required to access data sources"
 
-
+> "Mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects"
 
